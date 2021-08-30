@@ -1,2 +1,2 @@
 # SaturdaysAI_vol.3
-Ejemplos y codigo de la versión 3 de Saturdays San Sebastian
+Ejemplos y scripts del volumen 3 de Saturdays con edición en San Sebastian
