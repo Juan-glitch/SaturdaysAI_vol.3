@@ -9,7 +9,7 @@ st.markdown("<center>hello en html con propiedades</center>", True)
 st.checkbox("Checkbox", help = "Información adicional")
 
 if st.checkbox("Cbox interactivo", help = "Si me apretas, saco pecho"):
-  """Texto random pero con emoticono :sneezing face:"""
+  """Texto random pero con emoticono :sneezing_face:"""
   # Para más emoticonos: https://www.science.co.il/internet/html/Smileys.php
   
  
