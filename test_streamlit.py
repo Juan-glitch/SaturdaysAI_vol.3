@@ -10,6 +10,7 @@ st.checkbox("Checkbox", help = "Información adicional")
 
 if st.checkbox("Cbox interactivo", help = "Si me apretas, saco pecho"):
   """Texto random pero con emoticono :sneezing_face:"""
+  """Otro texto pero con otra manera de poner emoticonos :&#128520;:"""
   # Para más emoticonos: https://www.science.co.il/internet/html/Smileys.php
   
  
