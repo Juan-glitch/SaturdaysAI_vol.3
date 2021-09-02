@@ -26,5 +26,7 @@ st.write("El valor seleccionado ha sido " + str(rad))
 
 # Slider
 import datetime
-st.slider("Entrega de proyecto", min_value = datetime.date(2021,9,1), max_value = datetime.date(2022,1,2), 
+st.slider("Entrega de proyecto - slider fechas", min_value = datetime.date(2021,9,1), max_value = datetime.date(2022,1,2), 
           value = [datetime.date(2021,9,15), datetime.date(2021,10,1)])
+st.slider("Temperatura habitación - slider string", min_value = ('congelado', 'hace frio', 'templado','tengo calor', 'ardiendo'), 
+          value =['templado'])
