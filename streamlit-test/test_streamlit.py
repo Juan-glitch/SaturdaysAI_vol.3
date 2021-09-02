@@ -33,6 +33,6 @@ st.slider("Entrega de proyecto - slider fechas", min_value = datetime.date(2021,
 uploaded_file = st.file_uploader("Selecciona un archivo: ")
 if uploaded_file is not None:
   # To convert to a string based IO:
-  stringio = StringIO(uploaded_file.getvalue().decode("utf-8"))
-  st.write(stringio)
+  string_data = stringio.read()
+  st.write(string_data)
   
