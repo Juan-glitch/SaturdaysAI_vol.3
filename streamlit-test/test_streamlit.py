@@ -30,3 +30,10 @@ st.slider("Entrega de proyecto - slider fechas", min_value = datetime.date(2021,
           value = [datetime.date(2021,9,15), datetime.date(2021,10,1)])
 st.slider("Temperatura habitación - slider string", min_value = ["congelado", "hace frio", "templado","tengo calor", "ardiendo"], 
           value =["hace frio","templado"])
+
+uploaded_file = st.file_uploader("Choose a file")
+if uploaded_file is not None:
+  # To convert to a string based IO:
+  stringio = StringIO(uploaded_file.getvalue().decode("utf-8"))
+  st.write(stringio)
+  
