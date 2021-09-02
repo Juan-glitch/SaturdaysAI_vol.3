@@ -36,3 +36,8 @@ if uploaded_file is not None:
   string_data = stringio.read()
   st.write(string_data)
   
+# Button
+if st.button('Say hello'):
+  st.write('Why hello there')
+else:
+  st.write('Goodbye')
