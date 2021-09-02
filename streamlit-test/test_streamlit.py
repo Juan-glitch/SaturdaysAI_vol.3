@@ -4,10 +4,8 @@ import streamlit as st
 st.markdown("HELLO WORLD") # Titulo
 # Usado para meter texto html e imagenes de forma sencilla
 # https://wordtohtml.net/
-html_img = "<img src="https://i.pinimg.com/originals/b1/7d/a2/b17da2f2bda95d4750df9efc11eba4b2.jpg"
-     width="1000"
-     height="401"
-     title="Fuente: Fishing Net Wallpers - www.pinterest.es ">"
+url = "https://i.pinimg.com/originals/b1/7d/a2/b17da2f2bda95d4750df9efc11eba4b2.jpg"
+st.image(url, caption='Sunrise by the mountains')
 st.markdown(html_img, True)
 st.markdown("__Con esto en negrita__") # Titulo pero en black
 st.write("texto simple") # Texto simple 
