@@ -13,4 +13,11 @@ if st.checkbox("Cbox interactivo", help = "Si me apretas, saco pecho"):
   """Otro texto pero con otra manera de poner emoticonos &#128520; """
   # Para más emoticonos: https://www.science.co.il/internet/html/Smileys.php
   
- 
+
+st.selectbox("Esto es un selectbox", ["Valor", "another-one", "Tercer-valor"]) # Encargado de efectuar un selectbox  
+# st.multiselect("Y esto un multiselect", [1,2,3,4], default = [3,4])  # Efectua una selección mutiple
+
+
+rad = st.radio("Esto es un botón radio", [1,2,3,4],
+              format_func = lambda num: "Opcion " + str(num)) # Selecciona un valor y lo guarda para aplicarlo al modelo
+st.write("El valor seleccionado ha sido " + str(num))
