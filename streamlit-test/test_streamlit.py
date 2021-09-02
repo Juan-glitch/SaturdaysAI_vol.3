@@ -20,4 +20,4 @@ st.selectbox("Esto es un selectbox", ["Valor", "another-one", "Tercer-valor"]) #
 
 rad = st.radio("Esto es un botón radio", [1,2,3,4],
               format_func = lambda num: "Opcion " + str(num)) # Selecciona un valor y lo guarda para aplicarlo al modelo
-st.write("El valor seleccionado ha sido " + str(num))
+st.write("El valor seleccionado ha sido " + str(rad))
