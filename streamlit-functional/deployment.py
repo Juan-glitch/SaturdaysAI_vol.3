@@ -1,9 +1,9 @@
 import joblib
 import streamlit as st
 
-iris = joblib.load(".iris.pkl")
+iris = joblib.load("iris.pkl")
 max_val = joblib.load("max.pkl")
-min_val = joblib.load("./min.pkl")
+min_val = joblib.load("min.pkl")
 
 st.title("Iris Classifier")
 
