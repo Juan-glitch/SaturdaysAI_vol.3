@@ -1,9 +1,16 @@
 import joblib
 import streamlit as st
 
-iris = joblib.load("iris.pkl")
-max_val = joblib.load("max.pkl")
-min_val = joblib.load("min.pkl")
+# iris = joblib.load("iris.pkl")
+# max_val = joblib.load("max.pkl")
+# min_val = joblib.load("min.pkl")
+
+# ...to deploy online
+from urllib.request import urlopen
+from sklearn.externals import joblib
+iris = joblib.load(urlopen("https://github.com/Juan-glitch/SaturdaysAI_vol.3/blob/main/streamlit-functional/iris.pkl?raw=true"))
+max_val = joblib.load(urlopen("https://github.com/Juan-glitch/SaturdaysAI_vol.3/blob/main/streamlit-functional/max.pkl?raw=true"))
+min_val = joblib.load(urlopen("https://github.com/Juan-glitch/SaturdaysAI_vol.3/blob/main/streamlit-functional/min.pkl?raw=true"))
 
 st.title("Iris Classifier")
 
