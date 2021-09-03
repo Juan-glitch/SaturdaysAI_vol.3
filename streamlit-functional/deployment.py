@@ -6,6 +6,7 @@ import streamlit as st
 # min_val = joblib.load("min.pkl")
 
 # ...to deploy online
+# Tenemos que usar la siguiente librería para descargar el contenido "raw" y poder hacer que el kernel lo encuentre.
 from urllib.request import urlopen
 
 iris = joblib.load(urlopen("https://github.com/Juan-glitch/SaturdaysAI_vol.3/blob/main/streamlit-functional/iris.pkl?raw=true"))
